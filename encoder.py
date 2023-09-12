@@ -5,14 +5,14 @@ import base64
 
 
 
-input_path = 'wordlist.txt'
+input_path = 'data/wordlist.txt'
 wordlist = open(input_path, 'r')
 
-hashed_path = 'hashed.txt'
+hashed_path = 'data/hashed.txt'
 hashed_writeable = open(hashed_path, 'w')   # As this file will be opened in both modes along the code,
 hashed_readable = open(hashed_path, 'r')    # it's opening is already declared here in both ways.
 
-encoded_path = 'encoded.txt'
+encoded_path = 'data/encoded.txt'
 
 num_lines = sum(1 for _ in open(input_path)) # Gets the number of lines in the input file
 
